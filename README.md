@@ -5,7 +5,7 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a><a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a> <a href="https://github.com/ishandutta2007/Awesome-Geological-Modeling/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Geological-Modeling?style=flat-square&color=gold" alt="GitHub Stars"/></a> <a href="https://github.com/ishandutta2007/Awesome-Geological-Modeling/network/members"><img src="https://img.shields.io/github/forks/ishandutta2007/Awesome-Geological-Modeling?style=flat-square&color=blue" alt="GitHub Forks"/></a> <a href="https://github.com/ishandutta2007/Awesome-Geological-Modeling/blob/main/LICENSE"><img src="https://img.shields.io/github/license/ishandutta2007/Awesome-Geological-Modeling?style=flat-square&color=green" alt="License"/></a><a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a><a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a> <a href="https://github.com/ishandutta2007/Awesome-Geological-Modeling/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Geological-Modeling?style=flat-square&color=gold" alt="GitHub_Stars"/></a> <a href="https://github.com/ishandutta2007/Awesome-Geological-Modeling/network/members"><img src="https://img.shields.io/github/forks/ishandutta2007/Awesome-Geological-Modeling?style=flat-square&color=blue" alt="GitHub Forks"/></a> <a href="https://github.com/ishandutta2007/Awesome-Geological-Modeling/blob/main/LICENSE"><img src="https://img.shields.io/github/license/ishandutta2007/Awesome-Geological-Modeling?style=flat-square&color=green" alt="License"/></a><a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
 </p>
 
 ## 📌 Top Geological Modeling Platforms & Open-Source Ecosystem 🗺️
@@ -65,9 +65,9 @@ Commercial and cloud-hybrid solutions tailored for enterprise mining operations,
 
 ## 🐍 Open-Source GitHub Projects
 
-Open-source Python toolkits, GIS plugins, visualization libraries, and geostatistical estimation engines for reproducible geomodelling workflows. *(Sorted in descending order by GitHub Star Count)*
+Open-source Python toolkits, GIS plugins, visualization libraries, and geostatistical estimation engines for reproducible geomodelling workflows. *(Sorted in descending order by GitHub Stars_Count)*
 
-| Repository & Link 📦 | GitHub Stars 🌟 | Primary Category & Description 📝 |
+| Repository & Link 📦 | GitHub_Stars 🌟 | Primary Category & Description 📝 |
 | :--- | :--- | :--- |
 | **[qgis/QGIS](https://github.com/qgis/QGIS)** 🗺️ | [<img src="https://img.shields.io/github/stars/qgis/QGIS?style=social&color=white" alt="QGIS Stars"/>](https://github.com/qgis/QGIS/stargazers) | Open-source desktop GIS platform with powerful geological mapping, profile extraction, and 3D terrain plugins. |
 | **[pyvista/pyvista](https://github.com/pyvista/pyvista)** 🎨 | [<img src="https://img.shields.io/github/stars/pyvista/pyvista?style=social&color=white" alt="PyVista Stars"/>](https://github.com/pyvista/pyvista/stargazers) | 3D mesh rendering & VTK wrapper heavily used for visualizing implicit geological surfaces, block models, and drillhole traces. |
