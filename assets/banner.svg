@@ -1,0 +1,194 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 360" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0d1117" />
+      <stop offset="50%" stop-color="#161b22" />
+      <stop offset="100%" stop-color="#0a0d12" />
+    </linearGradient>
+
+    <!-- Geological Strata Gradients -->
+    <linearGradient id="strata1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#2ea043" stop-opacity="0.8" />
+      <stop offset="50%" stop-color="#238636" stop-opacity="0.9" />
+      <stop offset="100%" stop-color="#1e7e34" stop-opacity="0.7" />
+    </linearGradient>
+
+    <linearGradient id="strata2" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#388bfd" stop-opacity="0.7" />
+      <stop offset="50%" stop-color="#1f6feb" stop-opacity="0.85" />
+      <stop offset="100%" stop-color="#1158c7" stop-opacity="0.6" />
+    </linearGradient>
+
+    <linearGradient id="strata3" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#a371f7" stop-opacity="0.6" />
+      <stop offset="50%" stop-color="#8957e5" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#6e40c9" stop-opacity="0.5" />
+    </linearGradient>
+
+    <linearGradient id="strata4" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#d29922" stop-opacity="0.5" />
+      <stop offset="50%" stop-color="#bb8009" stop-opacity="0.75" />
+      <stop offset="100%" stop-color="#9e6a03" stop-opacity="0.4" />
+    </linearGradient>
+
+    <linearGradient id="goldGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#58a6ff" />
+      <stop offset="100%" stop-color="#3fb950" />
+    </linearGradient>
+
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <style>
+    .fault-line {
+      stroke: #f85149;
+      stroke-dasharray: 8 6;
+      stroke-width: 2.5;
+      animation: faultPulse 3s infinite alternate ease-in-out;
+    }
+    .grid-line {
+      stroke: #30363d;
+      stroke-width: 1;
+      opacity: 0.4;
+    }
+    .wave-strata {
+      animation: shiftStrata 8s ease-in-out infinite alternate;
+    }
+    .borehole {
+      stroke: #58a6ff;
+      stroke-width: 3;
+      stroke-dasharray: 6 4;
+    }
+    .borehole-node {
+      fill: #3fb950;
+      animation: pulseNode 2s infinite ease-in-out;
+    }
+    .title-text {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      font-weight: 800;
+      font-size: 44px;
+      fill: #ffffff;
+      letter-spacing: -0.5px;
+    }
+    .subtitle-text {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      font-weight: 500;
+      font-size: 20px;
+      fill: #8b949e;
+    }
+    .tag-pill {
+      fill: #21262d;
+      stroke: #30363d;
+      stroke-width: 1.5;
+      rx: 16;
+    }
+    .tag-text {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      font-size: 13px;
+      font-weight: 600;
+      fill: #58a6ff;
+    }
+
+    @keyframes faultPulse {
+      0% { stroke-opacity: 0.4; stroke-width: 2; }
+      100% { stroke-opacity: 1; stroke-width: 3.5; filter: drop-shadow(0 0 6px rgba(248, 81, 73, 0.8)); }
+    }
+    @keyframes pulseNode {
+      0% { r: 4; fill-opacity: 0.7; }
+      50% { r: 7; fill-opacity: 1; filter: drop-shadow(0 0 8px #3fb950); }
+      100% { r: 4; fill-opacity: 0.7; }
+    }
+    @keyframes shiftStrata {
+      0% { transform: translateY(0px); }
+      100% { transform: translateY(6px); }
+    }
+  </style>
+
+  <!-- Canvas Background -->
+  <rect width="1200" height="360" rx="12" fill="url(#bgGrad)" stroke="#30363d" stroke-width="2" />
+
+  <!-- 3D Perspective Grid Background (Subsurface Matrix) -->
+  <g class="grid-lines">
+    <line x1="0" y1="60" x2="1200" y2="60" class="grid-line" />
+    <line x1="0" y1="120" x2="1200" y2="120" class="grid-line" />
+    <line x1="0" y1="180" x2="1200" y2="180" class="grid-line" />
+    <line x1="0" y1="240" x2="1200" y2="240" class="grid-line" />
+    <line x1="0" y1="300" x2="1200" y2="300" class="grid-line" />
+
+    <line x1="150" y1="0" x2="150" y2="360" class="grid-line" />
+    <line x1="350" y1="0" x2="350" y2="360" class="grid-line" />
+    <line x1="550" y1="0" x2="550" y2="360" class="grid-line" />
+    <line x1="750" y1="0" x2="750" y2="360" class="grid-line" />
+    <line x1="950" y1="0" x2="950" y2="360" class="grid-line" />
+    <line x1="1150" y1="0" x2="1150" y2="360" class="grid-line" />
+  </g>
+
+  <!-- Geological Strata Layers (Background Dynamic Visuals) -->
+  <g class="wave-strata">
+    <!-- Layer 4: Deep Basement Layer -->
+    <path d="M 0 290 Q 300 320 600 280 T 1200 310 L 1200 360 L 0 360 Z" fill="url(#strata4)" />
+    <!-- Layer 3: Lower Sediment Strata -->
+    <path d="M 0 240 Q 350 270 700 230 T 1200 250 L 1200 310 Q 600 280 0 320 Z" fill="url(#strata3)" />
+    <!-- Layer 2: Middle Structural Horizon -->
+    <path d="M 0 190 Q 250 220 650 180 T 1200 210 L 1200 250 Q 700 230 0 270 Z" fill="url(#strata2)" />
+    <!-- Layer 1: Topographic / Upper Stratigraphy -->
+    <path d="M 0 150 Q 400 180 800 140 T 1200 160 L 1200 210 Q 650 180 0 220 Z" fill="url(#strata1)" />
+  </g>
+
+  <!-- Animated Fault Line / Discontinuity -->
+  <path d="M 780 40 L 710 340" class="fault-line" />
+
+  <!-- Boreholes & Sampling Nodes -->
+  <g class="boreholes">
+    <!-- Borehole 1 -->
+    <line x1="220" y1="40" x2="220" y2="310" class="borehole" />
+    <circle cx="220" cy="165" r="5" class="borehole-node" />
+    <circle cx="220" cy="205" r="5" class="borehole-node" style="animation-delay: 0.6s;" />
+    <circle cx="220" cy="265" r="5" class="borehole-node" style="animation-delay: 1.2s;" />
+
+    <!-- Borehole 2 -->
+    <line x1="980" y1="40" x2="980" y2="295" class="borehole" />
+    <circle cx="980" cy="175" r="5" class="borehole-node" style="animation-delay: 0.3s;" />
+    <circle cx="980" cy="225" r="5" class="borehole-node" style="animation-delay: 0.9s;" />
+    <circle cx="980" cy="280" r="5" class="borehole-node" style="animation-delay: 1.5s;" />
+  </g>
+
+  <!-- Foreground Title and Subtitle Container (Ensures Title Remains Crisp & Unobscured) -->
+  <g transform="translate(60, 115)">
+    <!-- Subtle Background Plate behind Text for Guaranteed Contrast -->
+    <rect x="-15" y="-45" width="820" height="195" rx="10" fill="#0d1117" fill-opacity="0.75" backdrop-filter="blur(4px)" stroke="#30363d" stroke-width="1" />
+
+    <!-- Repository Main Title -->
+    <text x="0" y="0" class="title-text">
+      Awesome Geological Modeling 🌋⛏️
+    </text>
+
+    <!-- Subtitle Description -->
+    <text x="0" y="38" class="subtitle-text">
+      Curated 3D Implicit &amp; Explicit Geomodelling Software, Resource Estimation &amp; Python Stacks
+    </text>
+
+    <!-- Feature Tag Pills -->
+    <g transform="translate(0, 65)">
+      <!-- Pill 1 -->
+      <rect x="0" y="0" width="165" height="32" class="tag-pill" />
+      <text x="14" y="21" class="tag-text">💎 SaaS Platforms</text>
+
+      <!-- Pill 2 -->
+      <rect x="180" y="0" width="185" height="32" class="tag-pill" />
+      <text x="194" y="21" class="tag-text">🐍 Open-Source Python</text>
+
+      <!-- Pill 3 -->
+      <rect x="380" y="0" width="175" height="32" class="tag-pill" />
+      <text x="394" y="21" class="tag-text">📐 3D Implicit Models</text>
+
+      <!-- Pill 4 -->
+      <rect x="570" y="0" width="165" height="32" class="tag-pill" />
+      <text x="584" y="21" class="tag-text">⛏️ Resource Estimate</text>
+    </g>
+  </g>
+</svg>
